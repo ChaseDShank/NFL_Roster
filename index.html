@@ -1,44 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>NFL Roster</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <div class="row text-center">
             <div class="col-xs-12">
-                <h2>My team</h2>
+                <h2><strong>My Team</strong></h2>
             </div>
             <div class="row">
-                    <div class="col-md-3 col-xs-6 col-sm-4">
-                            <div class="panel panel-info">
-                                <div class="panel-heading text-responsive">
-                                    <h2 name='player'>Player Name</h2>
-                                    <h3 name='position'>Position</h3>
-                                    <h4 name='team'>Team Name</h4>
-                                </div>
-                                <div class="panel-body thumbnail">
-                                    <img src="//images.rapgenius.com/f4f9275261f2aa713c6921fd6300ad68.600x436x1.png" class="img-responsive">
-                                </div>
-                                <div class="panel-footer text-center">
-                                    <button name='remove' class="btn-danger" type="button">Remove</button>
-                                </div>
-                            </div>
-                        </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-xs-12">
-                    <h2>Results</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-3 col-xs-6 col-sm-4">
+                <div class="col-md-3 col-xs-6 col-sm-4">
                     <div class="panel panel-info">
                         <div class="panel-heading text-responsive">
                             <h2 name='player'>Player Name</h2>
@@ -49,22 +29,63 @@
                             <img src="//images.rapgenius.com/f4f9275261f2aa713c6921fd6300ad68.600x436x1.png" class="img-responsive">
                         </div>
                         <div class="panel-footer text-center">
-                            <button name='add' class="btn-primary" type="button">Add to Roster</button>
+                            <button name='remove' class="btn-danger" type="button">Cut Player</button>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2>Search by <strong>player</strong> or <strong>team</strong> name</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-xs-12">
+                    <label for="player">Player Name</label>
+                    <input placeholder="Tim Tebow" name='name' type='string' class='form-control' </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-xs-12">
+                    <label for='team'>Team</label>
+                    <input placeholder="Broncos" name='team' type='string' class='form-control' </div>                    
+                </div>
+            </div>
+                <div class="row text-center">
+                    <div class="col-xs-12">
+                        <h2><strong>Results</strong></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-xs-6 col-sm-4">
+                    <div class="panel panel-info">
+                        <div class="panel-heading text-responsive">
+                            <h2 name='player'>Player Name</h2>
+                            <h3 name='position'>Position</h3>
+                            <h4 name='team'>Team Name</h4>
+                        </div>
+                        <div class="panel-body thumbnail">
+                            <img src="//images.rapgenius.com/f4f9275261f2aa713c6921fd6300ad68.600x436x1.png" class="img-responsive">
+                        </div>
+                        <div class="panel-footer text-center">
+                            <button name='add' class="btn-primary" type="button">Recruit Player</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    
-    </div>  
 
-    
-    <script src="https://code.jquery.com/jquery-3.2.1.js" crossorigin="anonymous"></script>
 
-    <script src="players-controller.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.js" crossorigin="anonymous"></script>
 
-    <script src="players-service.js"></script>
+        <script src="players-controller.js"></script>
 
-    <script src="app.js"></script>
+        <script src="players-service.js"></script>
+
+        <script src="app.js"></script>
 
 </body>
+
 </html>
