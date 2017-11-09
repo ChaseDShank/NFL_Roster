@@ -2,8 +2,13 @@ var PlayersService = function PlayersService(callback) {
   var playersData = [];
 
   this.getPlayersByTeam = function (teamName) {
-      //JSON.parse(JSON.stringiify(playersData.pro_team))
-  }
+        return playersData.filter(function(player){
+          if(player.team == teamName){
+            return true;
+          }
+        });
+      }
+  
 
   this.getPlayersByPosition = function (position) {
       // JSON.parse(JSON.stringify(playersData.position))
