@@ -1,5 +1,24 @@
 body{
     background-image: url(https://www.thedraftnight.com/public/assets/images/ad-background.jpg);
     color: whitesmoke;
-    background-repeat: repeat
+    background-repeat: repeat;
+    opacity: .93
 }
+.head1{
+    background-color: rgba(17, 129, 14, 0.473);
+    opacity: .9
+}
+.head1:hover{
+    background-color:rgba(105, 52, 50, 0.637);
+    opacity: .8
+}
+
+.head2{
+    background-color: rgba(105, 52, 50, 0.637);
+    opacity: .9;
+}
+.head2:hover{
+    background-color: rgba(17, 129, 14, 0.473);
+    opacity: .8
+}
+
